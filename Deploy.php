@@ -9,7 +9,8 @@
 	 */
 	// The commands
 	$commands = array(
-		'echo $PWD',
+		'PWD',
+		'cd',
 		'whoami',
 		'git reset --hard HEAD',
 		'git pull',
@@ -20,7 +21,9 @@
 	);
 	// Run the commands for output
 	$output = '';
+	shell_exec(cd);
 	chdir ( "c:\IIS\yasminweb.com" );
+	shell_exec(cd);
 	foreach($commands AS $command){
 		// Run it
 		$tmp = shell_exec($command);
