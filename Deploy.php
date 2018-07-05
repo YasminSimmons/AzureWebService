@@ -20,7 +20,7 @@
 	);
 	// Run the commands for output
 	$output = '';
-	chdir ( "c:\IIS\yasminweb.com" )
+	chdir ( "c:\IIS\yasminweb.com" );
 	foreach($commands AS $command){
 		// Run it
 		$tmp = shell_exec($command);
