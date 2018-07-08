@@ -11,8 +11,7 @@
 	$commands = array(
 	'echo $HOME',
 	'setx HOME C:\Users\user02',
-   	'git fetch --all',
-   	'git reset --hard origin/master'
+   	'git pull'
 	);
 
 	// Run the commands for output
