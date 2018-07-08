@@ -11,6 +11,7 @@
 	$commands = array(
 	'echo $HOME',
 	'setx HOME C:\Users\user02',
+	'git -v',
 	'git reset --hard',
    	'git pull'
 	);
