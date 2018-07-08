@@ -9,16 +9,12 @@
 	 */
 	// The commands
 	$commands = array(
-		'PWD',
-		'cd',
-		'whoami',
-		'git reset --hard HEAD',
-		'git pull',
-		'git status',
-		'git submodule sync',
-		'git submodule update',
-		'git submodule status',
+	'echo $HOME',
+	'setx HOME C:\Users\user02',
+   	'git fetch --all',
+   	'git reset --hard origin/master'
 	);
+
 	// Run the commands for output
 	$output = '';
 	shell_exec(cd);
@@ -32,6 +28,7 @@
 		$output .= htmlentities(trim($tmp)) . "\n";
 	}
 	// Make it pretty for manual user access (and why not?)
+	
 ?>
 <!DOCTYPE HTML>
 <html lang="en-US">
